@@ -20,6 +20,7 @@
 #include "soc/rtc_cntl_reg.h"    // disable brownout problems
 #include "esp_http_server.h"
 #include <ESPmDNS.h>
+#include "networkCredentials.h"
 
 //servos to control cams
 #define SERVO1_PIN 2
@@ -37,11 +38,6 @@ int s2_pos = 90;
 
 #define FLASHLIGHT_PIN 4
 bool flashlight_on = false;
-
-
-//TODO: PUT NETWORK CREDENTIALS HERE
-#define NETWORK_NAME ""
-#define NETWORK_PWD ""
 
 #define MOTOR_1_PIN_1 14
 #define MOTOR_1_PIN_2 15
